@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulação educativa de golpe</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  margin: 0;
+  color: #263445;
+}
+header {
+  background: #243b53;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.warning {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+main {
+  max-width: 480px;
+  margin: 30px auto;
+  padding: 22px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #0002;
+}
+h2 { color: #1d4ed8; }
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#resultado {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff7ed;
+  border: 1px solid #fb923c;
+  border-radius: 8px;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2 style="color:white">SIMULAÇÃO DE CADASTRO</h2>
+  <p>Exemplo de engenharia social</p>
+</header>
+
+<div class="warning">
+  SITE FICTÍCIO — NÃO É UM SERVIÇO DO GOVERNO
+</div>
+
+<main>
+  <h2>Consulta de benefício do gás</h2>
+  <p>Imagine que você recebeu um anúncio prometendo
+  um botijão gratuito.</p>
+
+  <label>Nome fictício:</label>
+  <input placeholder="Ex.: Maria da Silva" disabled>
+
+  <label>CPF fictício:</label>
+  <input placeholder="000.000.000-00" disabled>
+
+  <button onclick="revelar()">
+    Simular consulta
+  </button>
+
+  <div id="resultado">
+    <h3>🚨 ATENÇÃO! SIMULAÇÃO DE GOLPE</h3>
+    <p>Você acabou de observar uma página que utiliza
+    a aparência de um cadastro de benefício para
+    conquistar a confiança da vítima.</p>
+
+    <strong>Observe os sinais de alerta:</strong>
+    <ul>
+      <li>Promessa de benefício imediato.</li>
+      <li>Ausência de identificação institucional verificável.</li>
+      <li>Solicitação de informações pessoais.</li>
+      <li>Pressão para realizar o cadastro.</li>
+    </ul>
+
+    <p><strong>Na vida real:</strong> não informe seus
+    dados em páginas recebidas por mensagens.
+    Consulte diretamente os canais oficiais.</p>
+  </div>
+</main>
+
+<footer>
+  Material exclusivamente educativo.
+  Nenhum dado é coletado ou transmitido.
+</footer>
+
+<script>
+function revelar() {
+  document.getElementById("resultado").style.display = "block";
+}
+</script>
+
+</body>
+</html>
